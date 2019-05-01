@@ -1,0 +1,9 @@
+import tensorflow as tf
+tf.enable_eager_execution()
+
+a = tf.constant([[2.0, 3.0], [4.0, 5.0]])
+print(tf.matmul(a, a))
+  # => tf.Tensor(
+  # [[ 16. 21.]
+  #  [ 28. 37.]], shape=(2,2), dtype=float32)
+  
